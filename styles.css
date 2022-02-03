@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #0c2344;
+}
+
+.header{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #1d4987;
+    padding-bottom: .5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding-top: 1.5rem;
+   
+}
+
+nav .logo  h2{
+    color: orange;
+    font-size: 2rem;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.navLinks > input{
+    border: 1px solid #255ba7;
+    padding: 6px;
+    border-radius: 4px;
+    height: 2.4rem;
+    color: white;
+    width: 60%;
+    background-color: #0c2344;
+}
+
+.navLinks > input:focus{
+    border: none;
+    
+}
+
+.navLinks > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.login button {
+    border: none;
+    width: 5rem;
+    height: 2.5rem;
+    background-color: orange;
+    color: #0c2344;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.login button:hover{
+    background-color: rgb(238, 160, 15);
+}
+
+.section_hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.left_section{
+    width: 50%;
+}
+.left_section > h1{
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 2rem;
+}
+
+.left_section > p{
+    color: rgb(199, 199, 199);
+    margin-bottom: 2rem;
+    line-height:2rem;
+}
+
+.left_section > button{
+    background-color: orange;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.left_section > button > a{
+    text-decoration: none;
+        color: #0c2344;
+    font-weight: bold;
+}
+
+.left_section button:hover{
+    background-color: rgb(238, 160, 15);
+}
+
+.right__section > img{
+    width: 500px;
+}
+
+.adverts{
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+    border-top: 1px solid gray;
+    padding-top: 1rem;
+}
+
+.adverts > h1{
+    color: orange;
+}
+
+.hero-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: transform .4s;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.hero-top:hover{
+    transform: scale(1.1);
+}
+.hero-top > img{
+    width: 350px;
+}
+
+
+.left-c{
+    width: 45%;
+}
+
+
+.left-c > h2{
+    margin-bottom: 2rem;
+    color: gainsboro;
+}
+
+
+.left-c > p{
+    margin-bottom: 2rem;
+    color: gainsboro;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    margin-top: 3rem !important;
+    width: 85%;
+    margin: auto;
+    padding: 0 1.5em;
+}
+
+.section-header{
+    color: white;
+    font-size: 1.4rem;
+}
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: rgb(240, 164, 23);
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: gainsboro;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 200px;
+}
+
+.shop-item-details {
+    display: flex;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: gainsboro;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: gainsboro;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: gainsboro;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: orange;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid orange;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(197, 197, 197);
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: orange;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 20px auto 80px auto;
+    font-size: 1em;
+}
